@@ -1,0 +1,12 @@
+{
+    "manifest_version": 1,
+    "name":"BMS NavBar",
+    "version":"0.1",
+    "description":"NavBar for BMS",
+
+    "content_scripts": [{
+        "css": ["style.css"],
+        "js": ["content.js"],
+        "matches": ["https://staff.bounceinc.com.au/*"]
+    }]
+}
