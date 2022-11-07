@@ -1,5 +1,10 @@
 
+html body {
+    background-color: black;
+}
 
-body {
-    background-color: blue;
+.time {
+    color: inherit;
+    padding: 5px;
+    color: aqua;
 }

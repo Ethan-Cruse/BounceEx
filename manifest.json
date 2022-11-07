@@ -1,8 +1,15 @@
 {
-    "manifest_version": 1,
+    "manifest_version": 3,
     "name":"BMS NavBar",
-    "version":"0.1",
+    "version":"0.1.0",
     "description":"NavBar for BMS",
+
+    // "icons": {
+    //     "16": "",  
+    //     "48": "",
+    //     "128": ""
+    // },
+    // "permissions":"[]",
 
     "content_scripts": [{
         "css": ["style.css"],
