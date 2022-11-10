@@ -4,7 +4,8 @@ const guide= document.querySelectorAll(".sub-menu")[2];
 const url = "https://staff.bounceinc.com.au/booking-app/arrivals#/dashboard/5?time=";
 const classTml = "<a class ='time' href='";
 var time = makingURL();
-const injection = time[0] + time[1] + time[2] + time[3] + time[4] + time[5] + time[6] + time[7] + time[8] + time[9] + time[10] + time[11] + time[12];
+const timeJoin = time.join("");
+const injection = timeJoin;
 
 
 
@@ -19,7 +20,6 @@ function makingURL () {              // function forming object with number from
 }
 
 const injectGuide = function(){                                      // Injection replaceing text in sub-menu with links.
-    // const guide= document.querySelectorAll(".sub-menu")[2];
     guide.innerHTML = injection;
     guide.classList.add("timeButton")
 }
