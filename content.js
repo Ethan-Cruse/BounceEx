@@ -13,7 +13,20 @@ function makingURL () {         // function forming object with number from 9-21
     var result = [];
     for (var i=9; i<22; i++) {
         var time = i;
-        var urlTogeather = classTml + url + time + "-00'> " + time + " </a>";
+        var AMPM = function (){    // Function converting  time to 12hour time and adding AM / PM to time
+            var ap = i;
+            if (ap < 12) {
+                ap = ap + "AM"
+                return ap;
+            } else if (ap === 12){
+                ap = ap + "PM";
+                return ap;
+            } else {
+                ap = (ap%12) + "PM";
+                return ap;
+            }
+        }
+        var urlTogeather = classTml + url + time + "-00'> " + AMPM() + " </a>";
         result.push (urlTogeather);
     }
     return result;
