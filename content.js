@@ -18,10 +18,14 @@ function makingURL () {              // function forming object with number from
     return result;
 }
 
-const injectGuide = function(){                                      // Injection replaceing text in sub-menu with links.
-    // const guide= document.querySelectorAll(".sub-menu")[2];
+function closingTime () {           // function to add spice to screen on when venue closed 
+
+}
+
+const injectGuide = function(){                 // Injection replaceing text in sub-menu with links.
     guide.innerHTML = injection;
     guide.classList.add("timeButton")
+    
 }
 
 injectGuide();

@@ -8,3 +8,27 @@ html body {
     padding: 5px;
     color: aqua;
 }
+
+@keyframes bgcolor {  /* css animation to add */
+    0% {
+        background-color: #0a0a0a
+    }
+
+    30% {
+        background-color: #bf39a2
+    }
+
+    60% {
+        background-color: #270dbb
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #c19de4
+    }
+}
+
+#
